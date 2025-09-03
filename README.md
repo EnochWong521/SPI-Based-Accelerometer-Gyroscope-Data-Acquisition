@@ -15,9 +15,9 @@ The system acquires accelerometer and gyroscope data, triggered by interrupts, a
   - Global flag variables set inside ISRs for efficient and low-latency data handling.
 - **UART transmission** of XYZ accelerometer and gyroscope values for real-time data logging and visualization.
 - Modularized code structure:
-  - `spi.[ch]` – SPI driver implementation
-  - `lsm6dsl.[ch]` – Sensor read/write functions and register definitions
-  - `usart.[ch]` – UART communication routines
+  - `spi` – SPI driver implementation
+  - `lsm6dsl` – Sensor read/write functions and register definitions
+  - `usart` – UART communication routines
   - Application files (`lab6_*.c`) demonstrating incremental tasks (basic SPI test, WHO_AM_I check, accelerometer logging, gyroscope logging)
 
 ---
